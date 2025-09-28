@@ -4,27 +4,27 @@
 #define DIAS 7
 
 int main() {
-    // Tela de boas-vindas
+    
     printf("=====================================\n");
     printf("         Bem-vindo ao Almocometro    \n");
     printf("              Atividade 3            \n");
     printf("  Professora Angela Perez Barcellos  \n");
     printf("=====================================\n\n");
 
-    // Vetor para armazenar almoços servidos por dia
+    // Vetores
     int almocos[DIAS];
     char diasSemana[DIAS][10] = {"Domingo", "Segunda", "Terca", "Quarta", "Quinta", "Sexta", "Sabado"};
     int total = 0;
     float media;
 
-    // Entrada de dados
+    // Entrada
     for (int i = 0; i < DIAS; i++) {
         printf("Digite o numero de almocos servidos na %s: ", diasSemana[i]);
         scanf("%d", &almocos[i]);
         total += almocos[i];
     }
 
-    // Cálculo da média semanal
+    // Cálculo da media
     media = total / (float)DIAS;
 
     // Exibição dos dados
@@ -37,7 +37,7 @@ int main() {
 
     printf("\nMedia semanal de almocos servidos: %.2f\n", media);
 
-    // Destaque do dia com maior consumo
+    // Maior consumo
     int pico = 0;
     for (int i = 1; i < DIAS; i++) {
         if (almocos[i] > almocos[pico]) {
