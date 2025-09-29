@@ -41,7 +41,7 @@ int main() {
 
     printf("=============================================\n");
     printf("      PROGRAMA DE ORDENACAO - BUBBLE SORT     \n");
-    printf("        Tema: Preços de Produtos              \n");
+    printf("        Tema: Precos de Produtos              \n");
     printf("               Atividade 4                    \n");
     printf("    Professora Angela Perez Barcellos         \n");
     printf("=============================================\n\n");
